@@ -1,0 +1,22 @@
+{
+    "name" : "jrschumacher/mongofunk",
+    "description" : "Extends Mongo classes to better support various formats",
+    "homepage" : "https://github.com/jrschumacher/mongofunk",
+    "type" : "library",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name" : "Ryan Hamilton-Schumacher",
+            "email" : "ryan@38pages.com"
+        }
+    ],
+    "requires": {
+        "php" : ">=5.3",
+        "mongo" : ">=0.8.0"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "MongoFunk" : "src/"
+        }
+    }
+}
