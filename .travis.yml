@@ -4,7 +4,12 @@ php:
     - 5.3
     - 5.4
 
+services:
+    - mongodb
+
 before_script:
+    - mongo mydb_test --eval 'db.addUser("travis", "test");'
+    - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
     - wget http://getcomposer.org/composer.phar
     - php composer.phar install --dev
 
